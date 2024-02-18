@@ -1,0 +1,53 @@
+@font-face /* Дословный перевод: лицо шрифта, добавляет шрифт в программу*/
+  {
+  font-family: Rubik;
+  src: url("Rubik.ttf");
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-family: Rubik;
+    font-size: 24px;
+  }
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 12px;
+  }
+  #output {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  #calculateBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    cursor: pointer;
+  }
+  #calculateBtn:disabled {
+    background-color: rgb(128,128,128);
+  }
