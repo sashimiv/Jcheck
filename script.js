@@ -1,19 +1,19 @@
-window.addEventListener('DOMContentLoaded', function() { // начало программы
-  const hourlyRateInput = document.getElementById('hourlyRate'); // добавление переменных
+window.addEventListener('DOMContentLoaded', function() {
+  const hourlyRateInput = document.getElementById('hourlyRate');
   const hoursWorkedInput = document.getElementById('hoursWorked');
   const calculateBtn = document.getElementById('calculateBtn');
   const outputDiv = document.getElementById("output");
   hourlyRateInput.addEventListener("input", enableCalculateBtn); 
   hoursWorkedInput.addEventListener("input", enableCalculateBtn);
   calculateBtn.addEventListener("click", calculateEarnings);
-  function enableCalculateBtn() { // Код для активирования кнопки
+  function enableCalculateBtn() {
     if (hourlyRateInput.value && hoursWorkedInput.value) {
       calculateBtn.disabled = false;
     } else {
       calculateBtn.disabled = true;
     }
   }
-  function calculateEarnings() { // код для вывода заработной платы
+  function calculateEarnings() {
     const hourlyRate = parseFloat(hourlyRateInput.value);
     const hoursWorked = parseTimeToSeconds(hoursWorkedInput.value);
     if (!isNaN(hourlyRate) && !isNaN(hoursWorked)) {
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function() { // начало про�
       outputDiv.textContent =  earnings + "₽";
     }
   }
-  function parseTimeToSeconds(time) { // код для перевода форматов времени
+  function parseTimeToSeconds(time) {
     const timeArr = time.split(':');
     const hours = parseInt(timeArr[0]);
     const minutes = parseInt(timeArr[1]);
