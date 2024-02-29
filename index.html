@@ -2,23 +2,26 @@
 <html>
   <!-- coded by sashimiv -->
 <head>
-  <meta name="distribution" content="Global">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="author" content="sashimiv">
-  <meta name="email" content="sashimiv@gmail.com">
   <link rel="stylesheet" href="main.css">
 
   <title>Калькулятор Зарплаты</title>
 </head>
 <body>
   <div class="container">
-    <h1>Jcheck</h1>
+    
+    <h1>Зарплата</h1>
     
     <input type="text" id="hourlyRate" placeholder="Ставка в час">
     <input type="text" id="hoursWorked" placeholder="Отработанные часы">
     <input type="button" id="calculateBtn" value="Рассчитать" disabled>
+
     <div id="output"></div>
+    <div class="page-navigation">
+      <button onclick="window.location.href='index.html'">Расчет ЗП</button>
+      <button onclick="window.location.href='2check.html'">Рабочее время</button>
+      <button onclick="window.location.href='3check.html'">Налоги</button>
+    </div>
   </div>
-  <script src="script.js"></script>
+  <script src="check.js"></script>
 </body>
 </html>
