@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <!-- coded by sashimiv -->
+<head>
+  <link rel="stylesheet" href="main.css">
+
+  <title>Калькулятор рабочего дня</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Рабочий день</h1>
+    <input type="time" id="startTime" placeholder="Начало рабочего дня">
+    <input type="time" id="endTime" placeholder="Конец рабочего дня" >
+    <input type="button" id="calculateBtn" value="Рассчитать" onclick="Time()" disabled>
+    <span id="output"></span>
+        <div class="page-navigation">
+      <button onclick="window.location.href='index.html'">Расчет ЗП</button>
+      <button onclick="window.location.href='2check.html'">Рабочее время</button>
+      <button onclick="window.location.href='3check.html'">Налоги</button>
+    </div>
+  </div>    
+  <script src="Time.js"></script>
+  
+</body>
+</html>

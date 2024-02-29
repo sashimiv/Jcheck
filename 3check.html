@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <!-- coded by sashimiv -->
+<head>
+  <link rel="stylesheet" href="main.css">
+
+  <title>Калькулятор налогов</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Налоги</h1>
+    
+    <input type="text" id="income" placeholder="Доход">
+    <input type="text" id="TaxRate" placeholder="Проценты">
+    <input type="button" id="calculateBtn" value="Рассчитать" disabled>
+    <div id="output"></div>
+    <div class="page-navigation">
+      <button onclick="window.location.href='index.html'">Расчет ЗП</button>
+      <button onclick="window.location.href='2check.html'">Рабочее время</button>
+      <button onclick="window.location.href='3check.html'">Налоги</button>
+    </div>
+  </div>
+  <script src="Tax.js"></script>
+  </div>
+</body>
+</html>
