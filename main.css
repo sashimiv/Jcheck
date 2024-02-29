@@ -51,3 +51,27 @@ body {
   #calculateBtn:disabled {
     background-color: rgb(128,128,128);
   }
+  .page-navigation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .page-navigation button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Rubik;
+    font-size: 14px;
+  }
+  
+  .activeButton {
+    background-color: rgb(0, 0, 255);
+    color: white;
+  }
+  
+  .inactiveButton {
+    background-color: rgb(128,128,128);
+    color: black;
+  }
